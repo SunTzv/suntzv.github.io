@@ -6,9 +6,9 @@
 
 <style>
 body {
-  background: radial-gradient(-67deg, #000000, #1a0000, #330000, #660000);
-  background-size: 400% 400%;
-  animation: bloodFlow 6.9420s infinite;
+  background: radial-gradient(circle at center, #660000 0%, #1a0000 40%, #000000 100%);
+  background-size: 200% 200%;
+  animation: bloodFlow 8s ease-in-out infinite;
 
   display: flex;
   justify-content: center;
@@ -17,23 +17,23 @@ body {
   margin: 0;
   font-family: monospace;
 }
-
 @keyframes bloodFlow {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 60% 40%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 50%;
   }
 }
+
 a {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 a:visited {
@@ -42,9 +42,9 @@ a:visited {
 }
 
 a:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   color: black;
-  background: blue;
+  background: red;
   padding: 10px 20px;
   border-radius: 10px;
 }
